@@ -45,3 +45,21 @@ For example:
 ```
 For your convenience, there is already a function 'isArray(o)' declared and defined that returns true if its argument is an array, false otherwise.
 [Solution](/nestingStructureComparison.js)
+
+
+## Level 4: Sum Strings as Numbers
+
+Given the string representations of two integers, return the string representation of the sum of those integers.
+
+    For example:
+```js
+sumStrings('1','2') // => '3'
+```
+A string representation of an integer will contain no characters besides the ten numerals "0" to "9".
+    
+### MY NOTES 
+Points of complication that needed to be accounted for:
+- The tests passed in numbers with leading zeros which I removed using regex.
+- A few tests passed in large number which were converted to scientific notation when run through parseIn meaning it wasn't enoguh to do parseInt(a) + parseInt(b).
+    
+[Solution](/sumStrings.js)
